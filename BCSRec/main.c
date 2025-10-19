@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-
+#include "rectangle.h"
 #include "main.h"
 
 void main() {
@@ -83,7 +83,7 @@ void setWidth(int input, int *width) {
 }
 
 int getPerimeter(int *length, int *width) {
-	int perimeter = *length + *length + *width;
+	int perimeter = 2 * (*length + *width);
 	return perimeter;
 }
 
